@@ -1,0 +1,40 @@
+{
+  "name": "review-production-readiness",
+  "version": "0.2.0",
+  "description": "Audits application code and deployment artifacts for production risks that often appear only after release, including runtime drift, error boundaries, configuration, 10x/100x scale, dependencies, migrations, resilience, observability, and rollback safety.",
+  "author": {
+    "name": "zhang jingdu",
+    "url": "https://github.com/zhangrui-01"
+  },
+  "homepage": "https://github.com/zhangrui-01/review-production-readiness",
+  "repository": "https://github.com/zhangrui-01/review-production-readiness",
+  "license": "MIT",
+  "keywords": [
+    "code-review",
+    "production-readiness",
+    "reliability",
+    "scalability",
+    "dependency-audit"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "生产就绪代码审查",
+    "shortDescription": "用证据识别代码上线前的可靠性、容量、配置与依赖风险。",
+    "longDescription": "面向“开发环境能运行、生产环境却失败”的上线风险，执行证据驱动的八阶段审查。插件会核对运行时与部署环境差异，追踪异常与边界处理，识别应配置化的硬编码，建立 10 倍与 100 倍容量模型，审查第三方依赖和供应链风险，并检查数据迁移、外部故障韧性、可观测性、健康检查与回滚准备。每项发现均包含文件行号、触发条件、生产影响、最小修复和验证方法，并区分确认缺陷、潜在风险和待验证假设。默认只读审查，不会擅自修改代码或接触生产系统。",
+    "developerName": "zhang jingdu",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Analyze"
+    ],
+    "defaultPrompt": [
+      "审查这个项目是否具备生产上线条件，并列出发布阻断项。",
+      "检查本次代码变更在 10 倍和 100 倍规模下的风险。",
+      "审查新增依赖、硬编码配置和生产环境差异。"
+    ],
+    "brandColor": "#06B6D4",
+    "websiteURL": "https://github.com/zhangrui-01/review-production-readiness",
+    "composerIcon": "./assets/plugin-icon.png",
+    "logo": "./assets/plugin-icon.png"
+  }
+}
