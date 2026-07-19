@@ -1,0 +1,20 @@
+{
+  "name": "production-readiness-tools",
+  "interface": {
+    "displayName": "Production Readiness Tools"
+  },
+  "plugins": [
+    {
+      "name": "review-production-readiness",
+      "source": {
+        "source": "local",
+        "path": "./plugins/review-production-readiness"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
