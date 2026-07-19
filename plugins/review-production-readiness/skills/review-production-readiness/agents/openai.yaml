@@ -1,0 +1,4 @@
+interface:
+  display_name: "生产就绪代码审查"
+  short_description: "Evidence-based audit for reliable production releases"
+  default_prompt: "Use $review-production-readiness to audit this codebase for production-readiness risks and provide evidence-backed findings."
